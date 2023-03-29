@@ -9,7 +9,7 @@ const initialState = {
 }
 
 export const authSlice = createSlice({
-    auth,
+    name: "auth",
     initialState,
     // reducer are functions that modify the global state
     reducers: {
@@ -41,7 +41,6 @@ export const authSlice = createSlice({
 
                 return post
             })
-
             state.posts = updatedPosts
         }
     }
