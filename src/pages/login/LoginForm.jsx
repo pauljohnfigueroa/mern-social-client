@@ -56,7 +56,7 @@ const LoginForm = () => {
     }
     formData.append('picturePath', values.picture.name)
 
-    const savedUserResponse = await fetch('${process.env.SERVER_URL}/auth/register', {
+    const savedUserResponse = await fetch(`${process.env.SERVER_URL}/auth/register`, {
       method: 'POST',
       body: formData
     })
