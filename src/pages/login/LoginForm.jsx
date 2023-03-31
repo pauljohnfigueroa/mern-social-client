@@ -233,8 +233,9 @@ const LoginForm = () => {
             </Button>
             <Typography
               onClick={() => {
-                setPageType(isLogin ? 'register' : 'login')
-                resetForm()
+                // setPageType(isLogin ? 'register' : 'login')
+                // resetForm()
+                alert('Registration was disabled for security.')
               }}
               sx={{
                 textDecoration: 'underline',
